@@ -13,8 +13,8 @@ $(document).ready(function(){
 		e.preventDefault();
 		var titleCard = add.val();
 		if (titleCard != ""){
-			$(".wrapper").prepend("<div class='js-list card-list'></div>");
-			$(".card-list").html(titleCard);
+			$(".wrapper").prepend("<div class='list-wrapper card-list'><div class='list-content'></div></div>");
+			$(".list-content").html(titleCard);
 			$(add).val("");
 		}
 	});

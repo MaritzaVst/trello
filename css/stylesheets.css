@@ -13,19 +13,22 @@ header {
 .wrapper {
 	padding: 40px;
 }
-.js-list {
+.list-wrapper {
+	width: 200px;
 	float: left;
+	background-color: #e2e4e6;
+	color: #4d4d4d;
+	margin: 0px 5px;
 }
 .add-list form {
   padding: 4px;
 }
-.add-list form.click {
+.list-wrapper, .add-list form.click {
   background: #e2e4e6;
   display: inline-block;
   border-radius: 3px;
 }
 .add-list input {
-	width: 200px;
 	font-size: 12px;
 }
 .add-list .action-buttons {
@@ -46,4 +49,10 @@ header {
 	font-size: 15px;
   padding: 2px 5px;
   cursor: pointer;
+}
+.list-wrapper.card-list {
+	padding: 5px 10px;
+	color: #4d4d4d;
+  font-size: 11px;
+  font-weight: bold;
 }
