@@ -11,5 +11,39 @@ header {
 	margin-top: 15px;
 }
 .wrapper {
-
+	padding: 40px;
+}
+.js-list {
+	float: left;
+}
+.add-list form {
+  padding: 4px;
+}
+.add-list form.click {
+  background: #e2e4e6;
+  display: inline-block;
+  border-radius: 3px;
+}
+.add-list input {
+	width: 200px;
+	font-size: 12px;
+}
+.add-list .action-buttons {
+	padding-top: 4px;
+}
+.add-list button {
+	background: -webkit-linear-gradient(top,#61BD4F 0,#5AAC44 100%);
+  background: linear-gradient(to bottom,#61BD4F 0,#5AAC44 100%);
+  box-shadow: 0 1px 0 #3F6F21;
+  color: #fff;
+  border: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  height: 26px;
+}
+.add-list span.glyphicon {
+	color: #bbbcbd;
+	font-size: 15px;
+  padding: 2px 5px;
+  cursor: pointer;
 }
