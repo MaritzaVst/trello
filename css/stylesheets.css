@@ -11,14 +11,28 @@ header {
 	margin-top: 15px;
 }
 .wrapper {
+	position: relative;
+	height: calc(100vh - 60px);
+}
+.wrapper-content {
 	padding: 40px;
+	white-space: nowrap;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .list-wrapper {
 	width: 200px;
-	float: left;
 	background-color: #e2e4e6;
 	color: #4d4d4d;
 	margin: 0px 5px;
+	vertical-align: top;
 }
 .add-list form {
   padding: 4px;
@@ -34,7 +48,7 @@ header {
 .add-list .action-buttons {
 	padding-top: 4px;
 }
-.add-list button {
+.list-wrapper button {
 	background: -webkit-linear-gradient(top,#61BD4F 0,#5AAC44 100%);
   background: linear-gradient(to bottom,#61BD4F 0,#5AAC44 100%);
   box-shadow: 0 1px 0 #3F6F21;
@@ -44,15 +58,25 @@ header {
   font-weight: bold;
   height: 26px;
 }
-.add-list span.glyphicon {
+.list-wrapper span.glyphicon {
 	color: #bbbcbd;
 	font-size: 15px;
   padding: 2px 5px;
   cursor: pointer;
 }
 .list-wrapper.card-list {
-	padding: 5px 10px;
 	color: #4d4d4d;
   font-size: 11px;
   font-weight: bold;
+}
+.card-list .list-content, 
+.card-list .add-card-content {
+	padding: 5px 10px;
+}
+.add-card-content textarea {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  display: block;
+  margin-bottom: 7px;
 }
